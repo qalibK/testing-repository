@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form class="search-form js-search-form">
+      <div class="form-group">
+        <label for="searchQuery"></label>
+        <input
+          type="text"
+          name="query"
+          class="form-control"
+          id="searchQuery"
+          placeholder="Search images..."
+          autocomplete="off"
+        />
+      </div>
+      <button type="submit" class="submit-btn">Search</button>
+    </form>
+
+    <span class="waiting-text js-waiting-text is-hidden" aria-hidden="true"
+      >Loading images, please wait...</span
+    >
+
+    <div class="gallery-container">
+      <ul class="images js-images-container"></ul>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
